@@ -23,4 +23,11 @@ export default defineConfig({
       }
     }
   ],
+  // Ensure SSR build resolves packages using Node conditions
+  resolve: {
+    conditions: ['module', 'node', 'import', 'default'],
+  },
+  build: {
+    outDir: 'dist',
+  },
 })
