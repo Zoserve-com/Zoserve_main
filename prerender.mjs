@@ -17,7 +17,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const ROUTES = ['/', '/web-development'];
+const ROUTES = ['/', '/web-development', '/ai-development', '/saas-development'];
 
 async function run() {
     // Load the SSR bundle built by `vite build --ssr`

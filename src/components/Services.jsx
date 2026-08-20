@@ -47,9 +47,9 @@ export default function Services({ onOpenQuoteModal }) {
                         <div className="service-content">
                             <h3 className="service-title">SaaS Tools &amp; Subscriptions</h3>
                             <p className="service-desc">Custom software tools built and maintained for your business.</p>
-                            <button onClick={(e) => handleCtaClick(e, 'SaaS Tool Development')} className="service-more-btn bg-transparent border-none p-0 cursor-pointer">
+                            <Link to="/saas-development" className="service-more-btn">
                                 More Details <span className="material-symbols-outlined text-[14px]">arrow_forward</span>
-                            </button>
+                            </Link>
                         </div>
                     </div>
 

@@ -14,6 +14,8 @@ import QuoteModal from './components/QuoteModal.jsx';
 import PrivacyModal from './components/PrivacyModal.jsx';
 import Home from './pages/Home/Home.jsx';
 import WebDevelopment from './pages/WebDevelopment/WebDevelopment.jsx';
+import AIDevelopment from './pages/AIDevelopment/AIDevelopment.jsx';
+import SaaSDevelopment from './pages/SaaSDevelopment/SaaSDevelopment.jsx';
 
 /**
  * Minimal SSR shell — mirrors the real AppContent but uses StaticRouter
@@ -29,6 +31,8 @@ function AppShell({ url }) {
                     <Routes>
                         <Route path="/" element={<Home onOpenQuoteModal={() => {}} />} />
                         <Route path="/web-development" element={<WebDevelopment onOpenQuoteModal={() => {}} />} />
+                        <Route path="/ai-development" element={<AIDevelopment onOpenQuoteModal={() => {}} />} />
+                        <Route path="/saas-development" element={<SaaSDevelopment onOpenQuoteModal={() => {}} />} />
                     </Routes>
                 </main>
                 <Footer onOpenPrivacyModal={() => {}} />
